@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-cognito-identity-provider": "3.609.0",
+    "@aws-sdk/client-cognito-identity-provider": "3.629.0",
     "express": "4.19.2"
   }
 }
