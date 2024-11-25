@@ -1,9 +1,9 @@
 import { Authsignal } from "@authsignal/node";
 
-const secret = process.env.AUTHSIGNAL_SECRET;
-const apiBaseUrl = process.env.AUTHSIGNAL_URL;
+const apiSecretKey = process.env.AUTHSIGNAL_SECRET;
+const apiUrl = process.env.AUTHSIGNAL_URL;
 
-const authsignal = new Authsignal({ secret, apiBaseUrl });
+const authsignal = new Authsignal({ apiSecretKey, apiUrl });
 
 export const handler = async (event) => {
   const userId = event.request.userAttributes.sub;
